@@ -12,3 +12,4 @@ commands:
     description: Commands to manage the DiscordRoleSync plugin.
     aliases:
       - drs
+api-version: 1.16
