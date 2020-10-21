@@ -9,8 +9,6 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.UUID;
 
-import java.util.logging.Level;
-
 public class VaultAPI {
 
     private final Permission permProvider;
