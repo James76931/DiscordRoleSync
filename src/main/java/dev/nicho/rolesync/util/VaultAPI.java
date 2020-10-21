@@ -9,6 +9,8 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.UUID;
 
+import java.util.logging.Level;
+
 public class VaultAPI {
 
     private final Permission permProvider;
@@ -45,9 +47,12 @@ public class VaultAPI {
         for (String managedPerm : managedGroups) {
             permProvider.playerRemoveGroup(null, player, managedPerm);
         }
-        permProvider.playerAddGroup(null, player, "nosub");
         if (groups != null) groups.forEach(perm -> permProvider.playerAddGroup(null, player, perm));
-        if (groups.contains("sub")) permProvider.playerRemoveGroup(null, player, "nosub");
+        if (groups != null && groups.contains("sub")) {
+                permProvider.playerRemoveGroup(null, player, "nosub");
+            } else {
+                permProvider.playerAddGroup(null, player, "nosub");
+            };
     }
 
     /**
