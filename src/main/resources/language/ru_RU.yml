@@ -1,0 +1,29 @@
+linkedTo: "Привязано к"
+unknownUser: "неизвестный пользователь"
+discordAlreadyLinked: "Ваш Discord аккаунт уже привязан к игровому аккаунту"
+minecraftAlreadyLinked: "Ваш игровой аккаунт уже привязан к аккаунту Discord"
+
+noPermissionError: "У Вас нет прав для использования этой команды."
+commandError: "Ошибка во время выполнения команды. Обратитесь к консоли."
+
+usage: "Использование команд:"
+drsReloadDescription: "Перезагрузить настройки и языковые файлы плагина"
+
+drsBotRestartDescription: "Перезагрузить бота"
+botRestarted: "Бот перезагружен"
+
+drsVerifyDescription: "Подтвердить Discord аккаунт"
+alreadyVerified: "Ваш аккаунт уже подтвержден"
+verificationInstructions: "Отправьте следующий код Discord боту в личные сообщения:"
+
+pleaseLink: "Привяжите Ваш аккаунт на нашем Discord сервере:"
+
+whitelistErrorKickMsg: "Возникла ошибка во время проверки whitelist. Обратитесь к администратору"
+whitelistNotVerifiedKickMsg: "Вы не верифицированы. Отправьте следующий код Discord боту в личные сообщения:"
+notWhitelistedKickMsg: "Вас нет в whitelist'е этого сервера"
+
+notLatestVersion: "Установлена старая версия плагина DiscordRoleSync."
+latest: "Новая:"
+current: "Текущая:"
+
+reloadComplete: "Перезагрузка завершена"
