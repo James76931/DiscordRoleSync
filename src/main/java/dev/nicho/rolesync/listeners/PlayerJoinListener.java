@@ -36,9 +36,9 @@ public class PlayerJoinListener implements Listener {
                 }
 
                 if (!latestVersion.equalsIgnoreCase(version)) {
-                    String message = ChatColor.BLUE + "[DRS] " + ChatColor.AQUA + lang.getString("notLatestVersion") + "\n" +
-                            ChatColor.BLUE + "[DRS] " + ChatColor.AQUA + lang.getString("current") + " " + ChatColor.RED + version + ChatColor.AQUA + "\n" +
-                            ChatColor.BLUE + "[DRS] " + ChatColor.AQUA + lang.getString("latest") + " " + ChatColor.GREEN + latestVersion;
+                    String message = ChatColor.BLUE + "[Discord] " + ChatColor.AQUA + lang.getString("notLatestVersion") + "\n" +
+                            ChatColor.BLUE + "[Discord] " + ChatColor.AQUA + lang.getString("current") + " " + ChatColor.RED + version + ChatColor.AQUA + "\n" +
+                            ChatColor.BLUE + "[Discord] " + ChatColor.AQUA + lang.getString("latest") + " " + ChatColor.GREEN + latestVersion;
 
                     event.getPlayer().sendMessage(message);
                 }
