@@ -367,7 +367,7 @@ public class RoleSync extends JavaPlugin {
                         public void run() {
                             String template = language.getString("playersOnline");
                             if (template == null) {
-                                template = "%d/%d online";
+                                template = "%d/%d players";
                             }
 
                             String msg = String.format(template, that.getServer().getOnlinePlayers().size(), that.getServer().getMaxPlayers());
