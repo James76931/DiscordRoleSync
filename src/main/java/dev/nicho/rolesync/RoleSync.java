@@ -367,13 +367,13 @@ public class RoleSync extends JavaPlugin {
                         public void run() {
                             String template = language.getString("playersOnline");
                             if (template == null) {
-                                template = "%d/%d players";
+                                template = "%d/%d online";
                             }
 
                             String msg = String.format(template, that.getServer().getOnlinePlayers().size(), that.getServer().getMaxPlayers());
                             that.jda.getPresence().setActivity(Activity.playing(msg));
                         }
-                    }, 0L, 36000L); // run every 30 minutes
+                    }, 0L, 1200L); // run every minute
                 }
             } catch (LoginException e) {
                 getLogger().log(Level.SEVERE, "Error logging in. Did you set your token in config.yml?", e);
